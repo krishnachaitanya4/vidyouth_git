@@ -1,0 +1,662 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Vidyouth - Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link rel="stylesheet" href="{% static 'assets/css/navbar.css' %}">
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: TheEvent - v4.10.0
+  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .value-button {
+      display: inline-block;
+      border: 1px solid #ddd;
+      margin: 0px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 10px 0;
+      background: #5d6774;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .value-button:hover {
+      cursor: pointer;
+    }
+
+    form #decrease {
+      margin-right: -4px;
+      border-radius: 8px 0 0 8px;
+    }
+
+    form #increase {
+      margin-left: -4px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    form #input-wrap {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    input#number {
+      text-align: center;
+      border: none;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      margin-top: 2px;
+      margin: 0px;
+      width: 40px;
+      height: 40px;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="index.html">The<span>Event</span></a></h1>-->
+        <a href="index.html" class="scrollto">
+          <div class="row">
+            <div class="col logo"><img src="{% static 'assets/img/vidyouth-logo.png' %}" alt="" width="70 px"
+                height='auto'></div>
+            <div class="col logo-header">
+              <h2 style="color:white;margin-top:12px">vidyouth</h1>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#about">Events</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li> -->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a class="buy-tickets scrollto" href="{% url 'login' %}">login / signup</a>
+
+    </div>
+  </header><!-- End Header -->
+  <video autoplay muted loop class="back-video">
+    <source src="{% static 'assets/videos/bg_final.m4v' %}" type="video/mp4">
+  </video>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container container">
+      <div class="row" style="width:100%;top:0;text-align:left;min-height:100vh;margin-top:300px">
+
+        <div class="col-6">
+          <h1 class="mb-4 pb-0"><span>VIDYOUTH</span><br>2K23</h1>
+          <a href="#about" class="about-btn scrollto" style="margin-top:35%">Register Now</a>
+        </div>
+        <div class="col-6" style="text-align:right;margin-top:30%">
+          <h6 style="font-size: large;font-weight:600;"><span>13<sup>th</sup> April 2023</span></h6>
+          <h6 style="font-size: large;font-weight:600;"><span>University college of Engineering</span></h6>
+          <h6 style="font-size: large;font-weight:600;"><span>Narasaraopet</span></h6>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!--<div class="container" style="margin-top:100px">
+      <div class="row" style="width:100%;text-align:left; ">
+
+        <div class="col-6">
+          <h1 class="mb-4 pb-0">Welcome to<br><span>VIDYOUTH</span><br>2K23</h1>
+          <p class="mb-4 pb-0">University College of Engineering, JNTUK, Narasaraopet.</p>
+          <a href="#about" class="about-btn scrollto">About The Event</a>
+        </div>
+        <div class="col-6">
+
+        </div>
+      </div>
+    </div>-->
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About The Event</h2>
+            <p style="text-align:justify">VIDYOUTH-2k23-UCEN.
+              This is the 4th national-level technical symposium. This year we are planning to organize many interesting
+              and fruitful technical and non-technical events in which participants will be from different engineering
+              colleges present in the districts palnadu, Guntur, Prakasam,bapatla, and Krishna. We the students of the
+              EEE department have IEEE membership where we have access to national and international conferences and
+              also communicate with students from different regions. In this technical symposium there will be 3000 to
+              4000 people gathering in our college. Students can learn a lot many things and develop their skills by
+              participating in this technical symposium.</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>Where</h3>
+            <p>University College of Engineering, JNTUK, Narasaraopet.</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>When</h3>
+            <p>Thursday<br>13<sup>th</sup> April.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Speakers Section ======= -->
+    <section id="speakers">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2 style="color:white">Events</h2>
+          <p>Here are some of our events</p>
+        </div>
+        <h3 style="color:white">Technical</h3>
+        <div class="row justify-content-center" id="buy-tickets" style="color:black">
+          <div class="col-lg-5  mb-4 col-md-6">
+            <div class="card mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <!--<h6 class="card-price text-center" style="color:black">₹150</h6>-->
+                <img src="{% static 'assets/img/Workshop Home Automation T.png' %}" alt="expo" class="img-fluid">
+                <hr>
+                <div class="text-center">
+                  <div class="p" style="text-align:justify">
+                    This workshop based on IOT Home Automation using NODE MCU kit, hands on
+                    project developing and creating new project models can be done, each student can take
+                    away the tool kit. Every student gets a certification from the
+                    “IIT VARANASI”<br>
+                  </div>
+                  <h4 class=" text-center" style="color:black">Fee: ₹150</h4>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5  mb-4 col-md-6">
+            <div class="card mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <!--<h6 class="card-price text-center" style="color:black">₹150</h6>-->
+                <img src="{% static 'assets/img/Workshop Android SDK T.png' %}" alt="expo" class="img-fluid">
+                <hr>
+                <div class="text-center">
+                  <div class="p" style="text-align:justify">
+                    This workshop is based on “Android SDK (Software Development Kit), by this android
+                    sdk student able to customize the app and develop by them and professional expert
+                    demonstrate the Android SDK and certificates can be provided
+                  </div>
+                  <h4 class=" text-center" style="color:black">Fee: ₹150</h4>
+                  <!--
+                  <form >
+                    <strong>No of participants: </strong><div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                    <input type="number" id="number" value="0" />
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                  </form> -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4  mb-4 col-md-6">
+            <div class="card mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+
+                <img src="{% static 'assets/img/Project Expo T.png' %}" alt="expo" class="img-fluid">
+                <hr>
+                <div class="text-center">
+                  <div class="p" style="text-align:justify">
+                    Come with your projects join the debate explain your positives and negatives and get
+                    verified certification for all 3 members by our professor’s (3-members only).
+                  </div>
+                  <h4 class="text-center" style="color:black">Fee: ₹500</h4>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4  mb-4 col-md-6">
+            <div class="card mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <img src="{% static 'assets/img/Fault Analyzer T.png' %}" alt="expo" class="img-fluid">
+                <hr>
+                <div class="text-center">
+                  <div class="p" style="text-align:justify">
+                    It consists of three levels Basic circuit, Moderate circuit, Complex circuit Better
+                    performers in each level are sorted out and be rewarded. (Maximum 3 only).
+                  </div>
+                  <h4 class="text-center" style="color:black">Fee: ₹80</h4>
+
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4  mb-4 col-md-6">
+            <div class="card mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+
+                <img src="{% static 'assets/img/Ppt T.png' %}" alt="expo" class="img-fluid">
+                <hr>
+                <div class="text-center">
+                  <div class="p" style="text-align:justify;margin-bottom: 23px;">
+                    It comprises of 5 topics any topic can be selected by each batch and will be given 15
+                    minutes.<br> Maximum 2 members are allowed
+                  </div>
+                  <h4 class="text-center" style="color:black">Fee: ₹150</h4>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--Non Technical events-->
+        <h3 style="color:white;margin-top:40px">Non-Technical</h3>
+        <div class="row justify-content-center" id="buy-tickets" style="color:black">
+          <div class="col-lg-4  mb-4 col-md-6">
+            <div class="card mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <!--<h6 class="card-price text-center" style="color:black">₹150</h6>-->
+                <img src="{% static 'assets/img/Chausar NT.png' %}" alt="expo" class="img-fluid">
+                <hr>
+                <div class="text-center">
+                  <div class="p" style="text-align:justify">
+                    This is a real time ludo which we play physically in place of pawns with full king size
+                    costumes at your own fantasy come, join and enjoy with your friends with a group of
+                    5members.
+                  </div>
+                  <h4 class=" text-center" style="color:black">Fee: ₹300</h4>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4  mb-4 col-md-6">
+            <div class="card mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <!--<h6 class="card-price text-center" style="color:black">₹150</h6>-->
+                <img src="{% static 'assets/img/Food Trivia NT.png' %}" alt="expo" class="img-fluid">
+                <hr>
+                <div class="text-center">
+                  <div class="p" style="text-align:justify">
+                    This event consists of 10 variations of continental food Platter worth 499/- just
+                    for 150/-, the participant must identify its name and the main recipe ingredients for
+                    exciting Reward.
+                  </div>
+                  <h4 class=" text-center" style="color:black">Fee: ₹150</h4>
+                  <!--
+                  <form >
+                    <strong>No of participants: </strong><div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                    <input type="number" id="number" value="0" />
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                  </form> -->
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4  mb-4 col-md-6">
+            <div class="card mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+
+                <img src="{% static 'assets/img/Sherlock On The Way NT.png' %}" alt="expo" class="img-fluid">
+                <hr>
+                <div class="text-center">
+                  <div class="p" style="text-align:justify">
+                    This game has many hidden objects in our campus, going on in a level wise manner to
+                    research the final destination, come join with your friends and play with minimum 1
+                    and maximum of 4 members.
+                  </div>
+                  <h4 class="text-center" style="color:black">Fee: ₹60</h4>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5  mb-4 col-md-6">
+            <div class="card mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+                <img src="{% static 'assets/img/Quizard NT.png' %}" alt="expo" class="img-fluid">
+                <hr>
+                <div class="text-center">
+                  <div class="p" style="text-align:justify">
+                    Spin the wheel and answer questions in your funny way and get your rewards come and
+                    join with us minimum 1 to maximum of 3 members.
+                  </div><br>
+                  <h4 class="text-center" style="color:black">Fee: ₹80</h4>
+
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5  mb-4 col-md-6">
+            <div class="card mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-body">
+
+                <img src="{% static 'assets/img/Roadies NT.png' %}" alt="expo" class="img-fluid">
+                <hr>
+                <div class="text-center">
+                  <div class="p" style="text-align:justify;margin-bottom: 23px;">
+                    Roadies is a Mixture of level wise games with exciting reward come and join with your
+                    group and enjoy with us. Minimum 1 and maximum of 5 members of group.
+                  </div>
+                  <h4 class="text-center" style="color:black">Fee: ₹50</h4>
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
+                    data-ticket-type="standard-access">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End Speakers Section -->
+ 
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p>Check our gallery from the recent events</p>
+        </div>
+      </div>
+
+      <div class="gallery-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/1.jpg' %}" class="gallery-lightbox"><img
+                src="{% static 'assets/img/gallery/1.jpg' %}" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/2.jpg' %}" class="gallery-lightbox"><img
+                src="{% static 'assets/img/gallery/2.jpg' %}" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/3.jpg' %}" class="gallery-lightbox"><img
+                src="{% static 'assets/img/gallery/3.jpg' %}" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/4.jpg' %}" class="gallery-lightbox"><img
+                src="{% static 'assets/img/gallery/4.jpg' %}" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/5.jpg' %}" class="gallery-lightbox"><img
+                src="{% static 'assets/img/gallery/5.jpg' %}" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/6.jpg' %}" class="gallery-lightbox"><img
+                src="{% static 'assets/img/gallery/6.jpg' %}" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/7.jpg' %}" class="gallery-lightbox"><img
+                src="{% static 'assets/img/gallery/7.jpg' %}" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/8.jpg' %}" class="gallery-lightbox"><img
+                src="{% static 'assets/img/gallery/8.jpg' %}" class="img-fluid" alt=""></a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Supporters Section ======= -->
+    <section id="supporters" class="section-with-bg">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Sponsors</h2>
+        </div>
+
+        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{% static 'assets/img/WhatsApp Image 2023-03-25 at 13.26.46.jpeg' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{% static 'assets/img/Logo_img.jpg' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{% static 'assets/img/INFIGLOBE Final-01.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6">
+            <div class="supporter-logo">
+              <img src="{% static 'assets/img/Screenshot from 2023-03-25 13-38-31.png' %}" class="img-fluid" alt="">
+            </div>
+          </div> 
+        </div>
+
+      </div>
+
+    </section><!-- End Sponsors Section -->
+
+    
+
+    <!-- ======= Subscribe Section ======= -->
+    <section id="subscribe">
+      <div class="container" data-aos="zoom-in">
+        <div class="section-header">
+          <h2>Newsletter</h2>
+        </div>
+
+        <form method="POST" action="#">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-10 d-flex">
+              <input type="text" class="form-control" placeholder="Enter your Email">
+              <button type="submit" class="ms-2">Subscribe</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section><!-- End Subscribe Section -->
+    
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="section-bg">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>Vidyouth UCEN 2k23</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <address style="color:white">University College of Engineering, JNTUK, Narsaraopet.</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="bi bi-phone"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">info@vidyouth.in</a></p>
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h1>VIDYOUTH</h1>
+            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro.
+              Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore
+              consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              University College of Engineering <br>
+              JNTUK<br>
+              Narsaraopet. <br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@vidyouth.in<br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>VIDYOUTH</strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+  <script>
+    function increaseValue() {
+      var value = parseInt(document.getElementById('number').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      document.getElementById('number').value = value;
+    }
+
+    function decreaseValue() {
+      var value = parseInt(document.getElementById('number').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value < 1 ? value = 1 : '';
+      value--;
+      document.getElementById('number').value = value;
+    }
+  </script>
+</body>
+
+</html>
