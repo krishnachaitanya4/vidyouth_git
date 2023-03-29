@@ -89,7 +89,6 @@
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center ">
     <div class="container-fluid container-xxl d-flex align-items-center">
@@ -135,7 +134,7 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a class="buy-tickets scrollto" href="{% url 'login' %}">login / signup</a>
+      <a class="buy-tickets scrollto" href="">login / signup</a>
 
     </div>
   </header><!-- End Header -->
@@ -147,11 +146,11 @@
     <div class="hero-container container">
       <div class="row" style="width:100%;top:0;text-align:left;min-height:100vh;margin-top:300px">
 
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12 main-text">
           <h1 class="mb-4 pb-0"><span>VIDYOUTH</span><br>2K23</h1>
           <a href="#about" class="about-btn scrollto" style="margin-top:35%">Register Now</a>
         </div>
-        <div class="col-6" style="text-align:right;margin-top:30%">
+        <div class="col-md-6 col-sm-12 date-details" style="text-align:right;margin-top:30%">
           <h6 style="font-size: large;font-weight:600;"><span>13<sup>th</sup> April 2023</span></h6>
           <h6 style="font-size: large;font-weight:600;"><span>University college of Engineering</span></h6>
           <h6 style="font-size: large;font-weight:600;"><span>Narasaraopet</span></h6>
@@ -204,7 +203,11 @@
         </div>
       </div>
     </section><!-- End About Section -->
-
+    <!--Modals start Here
+    {% include "ha-modal.html" %}
+    {% include "wa-modal.html" %}-->
+    {% include "temp-modal.html" %}
+    <!--Modals end Here-->
     <!-- ======= Speakers Section ======= -->
     <section id="speakers">
       <div class="container" data-aos="fade-up">
@@ -228,8 +231,11 @@
                     “IIT VARANASI”<br>
                   </div>
                   <h4 class=" text-center" style="color:black">Fee: ₹150</h4>
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
-                    data-ticket-type="standard-access">Register</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#temp">
+                    Register
+                  </button>
+                  <!-- Modal -->
                 </div>
               </div>
             </div>
@@ -253,8 +259,10 @@
                     <input type="number" id="number" value="0" />
                     <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
                   </form> -->
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
-                    data-ticket-type="standard-access">Register</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#temp">
+                    Register
+                  </button>
                 </div>
               </div>
             </div>
@@ -271,8 +279,10 @@
                     verified certification for all 3 members by our professor’s (3-members only).
                   </div>
                   <h4 class="text-center" style="color:black">Fee: ₹500</h4>
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
-                    data-ticket-type="standard-access">Register</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#temp">
+                    Register
+                  </button>
                 </div>
               </div>
             </div>
@@ -289,8 +299,10 @@
                   </div>
                   <h4 class="text-center" style="color:black">Fee: ₹80</h4>
 
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
-                    data-ticket-type="standard-access">Register</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#temp">
+                    Register
+                  </button>
                 </div>
               </div>
             </div>
@@ -307,8 +319,10 @@
                     minutes.<br> Maximum 2 members are allowed
                   </div>
                   <h4 class="text-center" style="color:black">Fee: ₹150</h4>
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
-                    data-ticket-type="standard-access">Register</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#temp">
+                    Register
+                  </button>
                 </div>
               </div>
             </div>
@@ -331,8 +345,10 @@
                     5members.
                   </div>
                   <h4 class=" text-center" style="color:black">Fee: ₹300</h4>
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
-                    data-ticket-type="standard-access">Register</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#temp">
+                    Register
+                  </button>
                 </div>
               </div>
             </div>
@@ -356,8 +372,10 @@
                     <input type="number" id="number" value="0" />
                     <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
                   </form> -->
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
-                    data-ticket-type="standard-access">Register</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#temp">
+                    Register
+                  </button>
                 </div>
               </div>
             </div>
@@ -375,8 +393,10 @@
                     and maximum of 4 members.
                   </div>
                   <h4 class="text-center" style="color:black">Fee: ₹60</h4>
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
-                    data-ticket-type="standard-access">Register</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#temp">
+                    Register
+                  </button>
                 </div>
               </div>
             </div>
@@ -393,8 +413,10 @@
                   </div><br>
                   <h4 class="text-center" style="color:black">Fee: ₹80</h4>
 
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
-                    data-ticket-type="standard-access">Register</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#temp">
+                    Register
+                  </button>
                 </div>
               </div>
             </div>
@@ -411,8 +433,10 @@
                     group and enjoy with us. Minimum 1 and maximum of 5 members of group.
                   </div>
                   <h4 class="text-center" style="color:black">Fee: ₹50</h4>
-                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal"
-                    data-ticket-type="standard-access">Register</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#temp">
+                    Register
+                  </button>
                 </div>
               </div>
             </div>
@@ -422,41 +446,6 @@
       </div>
 
     </section><!-- End Speakers Section -->
- 
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery">
-
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Gallery</h2>
-          <p>Check our gallery from the recent events</p>
-        </div>
-      </div>
-
-      <div class="gallery-slider swiper">
-        <div class="swiper-wrapper align-items-center">
-          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/1.jpg' %}" class="gallery-lightbox"><img
-                src="{% static 'assets/img/gallery/1.jpg' %}" class="img-fluid" alt=""></a></div>
-          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/2.jpg' %}" class="gallery-lightbox"><img
-                src="{% static 'assets/img/gallery/2.jpg' %}" class="img-fluid" alt=""></a></div>
-          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/3.jpg' %}" class="gallery-lightbox"><img
-                src="{% static 'assets/img/gallery/3.jpg' %}" class="img-fluid" alt=""></a></div>
-          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/4.jpg' %}" class="gallery-lightbox"><img
-                src="{% static 'assets/img/gallery/4.jpg' %}" class="img-fluid" alt=""></a></div>
-          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/5.jpg' %}" class="gallery-lightbox"><img
-                src="{% static 'assets/img/gallery/5.jpg' %}" class="img-fluid" alt=""></a></div>
-          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/6.jpg' %}" class="gallery-lightbox"><img
-                src="{% static 'assets/img/gallery/6.jpg' %}" class="img-fluid" alt=""></a></div>
-          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/7.jpg' %}" class="gallery-lightbox"><img
-                src="{% static 'assets/img/gallery/7.jpg' %}" class="img-fluid" alt=""></a></div>
-          <div class="swiper-slide"><a href="{% static 'assets/img/gallery/8.jpg' %}" class="gallery-lightbox"><img
-                src="{% static 'assets/img/gallery/8.jpg' %}" class="img-fluid" alt=""></a></div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-    </section><!-- End Gallery Section -->
 
     <!-- ======= Supporters Section ======= -->
     <section id="supporters" class="section-with-bg">
@@ -465,59 +454,41 @@
         <div class="section-header">
           <h2>Sponsors</h2>
         </div>
-
-        <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{% static 'assets/img/WhatsApp Image 2023-03-25 at 13.26.46.jpeg' %}" class="img-fluid" alt="">
+        <h3>Main Sponsor</h3>
+        <div class="container justify-content-center align-items-center">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-6">
+              <a href="https://www.developtrees.com/"  target="_blank"><img src="{% static 'assets/img/Logo_img.jpg' %}" alt="" style="width:100%"></a>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{% static 'assets/img/Logo_img.jpg' %}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{% static 'assets/img/INFIGLOBE Final-01.png' %}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="supporter-logo">
-              <img src="{% static 'assets/img/Screenshot from 2023-03-25 13-38-31.png' %}" class="img-fluid" alt="">
-            </div>
-          </div> 
         </div>
-
       </div>
 
     </section><!-- End Sponsors Section -->
+    <!-- ======= Gallery Section ======= -->
+    <div class="container">
+    <h3>Sub Sponsors</h3>
+    <section id="gallery">
 
-    
-
-    <!-- ======= Subscribe Section ======= -->
-    <section id="subscribe">
-      <div class="container" data-aos="zoom-in">
-        <div class="section-header">
-          <h2>Newsletter</h2>
+      <div class="gallery-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide"><a href="assets/img/Screenshot from 2023-03-25 13-38-31.png" class="gallery-lightbox"><img
+                src="{% static 'assets/img/Screenshot from 2023-03-25 13-38-31.png' %}" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="{% static 'assets/img/WhatsApp Image 2023-03-25 at 13.26.46.jpeg' %}" class="gallery-lightbox"><img
+                src="{% static 'assets/img/WhatsApp Image 2023-03-25 at 13.26.46.jpeg' %}" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide"><a href="{% static 'assets/img/infin-2.jpg' %}" class="gallery-lightbox"><img
+                src="{% static 'assets/img/infin-2.jpg' %}" class="img-fluid" alt=""></a></div>
+                <div class="swiper-slide"><a href="{% static 'assets/img/cap.jpeg' %}" class="gallery-lightbox"><img
+                  src="{% static 'assets/img/cap.jpeg' %}" class="img-fluid" alt=""></a></div>
+          
+          
         </div>
-
-        <form method="POST" action="#">
-          <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-10 d-flex">
-              <input type="text" class="form-control" placeholder="Enter your Email">
-              <button type="submit" class="ms-2">Subscribe</button>
-            </div>
-          </div>
-        </form>
-
+        <div class="swiper-pagination"></div>
       </div>
-    </section><!-- End Subscribe Section -->
-    
+
+    </section>
+  </div><!-- End Gallery Section -->
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="section-bg">
 
@@ -542,7 +513,7 @@
             <div class="contact-phone">
               <i class="bi bi-phone"></i>
               <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+              <p><a href="tel:+91817931778">+91 81796 31778</a></p>
             </div>
           </div>
 
@@ -604,7 +575,7 @@
               University College of Engineering <br>
               JNTUK<br>
               Narsaraopet. <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Phone:</strong> +91 81796 31778<br>
               <strong>Email:</strong> info@vidyouth.in<br>
             </p>
 
@@ -641,6 +612,7 @@
 
   <!-- Template Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
+  <script src="{% static 'assets/js/forms.js' %}"></script>
   <script>
     function increaseValue() {
       var value = parseInt(document.getElementById('number').value, 10);

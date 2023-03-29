@@ -282,7 +282,7 @@ video{
     display: none;
   }
   #hero{
-    background:url('../img/hero-bg.jpg');;
+    background:url('../img/2459539.jpg');;
   }
 
 }
@@ -1439,4 +1439,10 @@ video{
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+
+@media (max-width:766px) {
+  .date-details{
+     display: none;
+  }
 }
